@@ -119,8 +119,6 @@ The first line of the data set contains:
 - **S** (`0 ≤ S < N`) — the index of the depot junction
 - **α** (`0 ≤ α ≤ 1`) — the weight balancing coverage vs. water efficiency in the scoring formula
 
-This is followed by **N** lines describing individual junctions. The i-th such line contains two decimal numbers representing the geographic coordinates of the junction.
-
 This is followed by **M** lines describing individual streets. The j-th such line contains the following values separated by single spaces:
 
 - **Aⱼ** and **Bⱼ** (`0 ≤ Aⱼ, Bⱼ < N, Aⱼ ≠ Bⱼ`) — the two junctions connected by the street.
@@ -174,11 +172,11 @@ The submission file must start with a line containing the integer **C** — the 
 
 Then, for each vehicle (in order from vehicle 1 to vehicle C), the file must contain three lines:
 
-1. **n** (`1 ≤ n ≤ 10⁶`) — the number of junctions in the vehicle's route (including the depot at start and end).
-2. **n junction indices** in order, starting and ending with **S**. Each consecutive pair of junctions must be connected by a valid street.
+1. **n** (`0 ≤ n ≤ 10⁶`) — the number of moves in the vehicle's route, that is, the number of streets it traverses. A vehicle that stays at the depot has n = 0.
+2. **n + 1 junction indices** in order, starting and ending with **S**. Each consecutive pair of junctions must be connected by a valid street.
 3. The **indices of the streets** that this vehicle cleans along its route (a subset of the streets it traverses). If the vehicle cleans no streets, this line is left empty.
 
-> You don't need every vehicle to clean streets — some vehicles may just traverse the network. If a street is cleaned by more than one vehicle, the solution is still accepted but the score for that street is counted only once. Streets cleaned after the time limit or by vehicles that do not return to the depot are ignored.
+> You don't need every vehicle to clean streets — some vehicles may just traverse the network. If a street is cleaned by more than one vehicle, the solution is still accepted but the score for that street is counted only once. A submission in which any vehicle exceeds the time limit or does not end at the depot is invalid and scores zero (see **Validity** under Scoring).
 
 ### Example Submission
 
@@ -281,7 +279,7 @@ With α = 0.5:
 Score = 0.5 × 0.800 + 0.5 × 1.000 = 0.900
 ```
 
-This solution achieves perfect efficiency (zero waste) because every street is cleaned by the smallest vehicle capable of handling it. Coverage is 0.8 because Street S6 (optional, 350 m) was left uncleaned due to time constraints. A perfect score of 1.0 would require cleaning all streets with zero waste.
+This solution achieves perfect efficiency (zero waste) because every street is cleaned by the smallest vehicle capable of handling it. Coverage is 0.8 because Street S6 (optional, 350 m) was left uncleaned. The time limit did not force this: Vehicle 2 (Medium) can also clean S6, for example on the route depot → 1 → 2 → 4 → 3 → 5 → depot (175 seconds), which cleans every street with zero waste and gives a score of 1.0. A perfect score of 1.0 requires cleaning all streets with zero waste.
 
 ### Example Timeline
 
