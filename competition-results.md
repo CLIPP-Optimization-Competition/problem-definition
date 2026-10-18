@@ -17,4 +17,4 @@
 | Prizreni_TeamRecursive | 0.798 | 0.635 | 0.775 | 2.208 | |
 | OptiMinds - Rahovec | 0.754 | N/A | 0.775 | 1.529 | |
 | MindTech - Suhareka | N/A | N/A | 0.744 | 0.744 | |
-| **MILP model** | **0.822** | N/A | **0.805** | | |
+| **ILP model** | **0.822** | N/A | **0.805** | | |
