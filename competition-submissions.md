@@ -1,6 +1,6 @@
 | Email | GitHub Repo | Team | Total Score |
 |---|---|---|---|
-| rajmonde.shllaku@student.uni-pr.edu | `git push -u origin main` | Lulekuqet mbi mure + Podujeva | 2.347948 |
+| rajmonde.shllaku@student.uni-pr.edu | [rajmondashllaku/capacitated-arc-routing-problem](https://github.com/rajmondashllaku/capacitated-arc-routing-problem) | Lulekuqet mbi mure + Podujeva | 2.347948 |
 | leotrim.halimi@student.uni-pr.edu | [VeraLlugiqi/ain-gara](https://github.com/VeraLlugiqi/ain-gara) | LogicX Presheva | 2.377113022 |
 | ylljete.kicaj@student.uni-pr.edu | [SuhejlaHoxha/gr6_street_cleaning](https://github.com/SuhejlaHoxha/gr6_street_cleaning) | Prizreni_TeamRecursive | 2.20781851 |
 | endrita.vllasaliu@student.uni-pr.edu | [endritavllasaliu16/Hacathon](https://github.com/endritavllasaliu16/Hacathon) | Parallel minds + Prishtina | 2.428954401 |
